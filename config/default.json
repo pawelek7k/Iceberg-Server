@@ -11,6 +11,6 @@
   },
   "postgresql": {
     "client": "pg",
-    "connection": "postgres://postgres:postgres@localhost:5432/iceberg-server"
+    "connection": "postgres://postgres:postgres@localhost:5432/serverIceberg"
   }
 }
