@@ -1,42 +1,22 @@
-# iceberg-server
+# Personality Assessment and Serial Killers API
 
-> 
+## Description
 
-## About
+The Personality Assessment and Serial Killers API provides a comprehensive set of tools to assess personality traits associated with psychopathy and access curated articles on serial killers. This API is designed for developers, researchers, and educators interested in understanding personality assessment and exploring the psychology of serial killers.
 
-This project uses [Feathers](http://feathersjs.com). An open source framework for building APIs and real-time applications.
+## Features
 
-## Getting Started
+    ###Personality Assessment Questions:
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
+        Access a categorized set of questions to evaluate personality traits such as manipulativeness, empathy, impulsivity, and ethical considerations.
+        Each question offers multiple-choice answers with assigned scores to indicate alignment with psychopathic tendencies.
 
-    ```
-    cd path/to/iceberg-server
-    npm install
-    ```
+    ###Scoring System:
 
-3. Start your app
+        Utilize scores from user responses to analyze and interpret personality traits associated with psychopathy.
+        Scores are based on established psychological principles and provide insights into behavioral patterns.
 
-    ```
-    npm run compile # Compile TypeScript source
-    npm run migrate # Run migrations to set up the database
-    npm start
-    ```
+    ###Serial Killers Articles:
 
-## Testing
-
-Run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-This app comes with a powerful command line interface for Feathers. Here are a few things it can do:
-
-```
-$ npx feathers help                           # Show all commands
-$ npx feathers generate service               # Generate a new Service
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+        Retrieve curated articles and resources focusing on the psychology, behaviors, and case studies of serial killers.
+        Enhance understanding of infamous cases, psychological profiles, and societal impacts through comprehensive articles.
