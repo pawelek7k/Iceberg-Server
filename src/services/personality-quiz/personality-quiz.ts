@@ -3,14 +3,14 @@
 import { hooks as schemaHooks } from '@feathersjs/schema'
 
 import {
-  personalityQuizDataValidator,
-  personalityQuizPatchValidator,
-  personalityQuizQueryValidator,
-  personalityQuizResolver,
-  personalityQuizExternalResolver,
   personalityQuizDataResolver,
+  personalityQuizDataValidator,
+  personalityQuizExternalResolver,
   personalityQuizPatchResolver,
-  personalityQuizQueryResolver
+  personalityQuizPatchValidator,
+  personalityQuizQueryResolver,
+  personalityQuizQueryValidator,
+  personalityQuizResolver
 } from './personality-quiz.schema'
 
 import type { Application } from '../../declarations'
@@ -22,6 +22,7 @@ export const personalityQuizMethods: Array<keyof PersonalityQuizService> = [
   'get',
   'create',
   'patch',
+  'update',
   'remove'
 ]
 
