@@ -22,7 +22,8 @@ export const articlesSchema = Type.Object(
     psychologicalBackground: Type.String(),
     policeActions: Type.String(),
     lawsuit: Type.String(),
-    socialReactions: Type.String()
+    socialReactions: Type.String(),
+    legacyAndImpact: Type.String()
   },
   { $id: 'Articles', additionalProperties: false }
 )
@@ -33,7 +34,7 @@ export const articlesResolver = resolve<Articles, HookContext<ArticlesService>>(
 export const articlesExternalResolver = resolve<Articles, HookContext<ArticlesService>>({})
 
 // Schema for creating new entries
-export const articlesDataSchema = Type.Pick(articlesSchema, ['title', 'killers', 'victims', 'date', 'images', 'description', 'details', 'location', 'psychologicalBackground', 'policeActions', 'lawsuit', 'socialReactions'], {
+export const articlesDataSchema = Type.Pick(articlesSchema, ['title', 'killers', 'victims', 'date', 'images', 'description', 'details', 'location', 'psychologicalBackground', 'policeActions', 'lawsuit', 'socialReactions', 'legacyAndImpact'], {
   $id: 'ArticlesData'
 })
 export type ArticlesData = Static<typeof articlesDataSchema>
@@ -49,7 +50,7 @@ export const articlesPatchValidator = getValidator(articlesPatchSchema, dataVali
 export const articlesPatchResolver = resolve<Articles, HookContext<ArticlesService>>({})
 
 // Schema for allowed query properties
-export const articlesQueryProperties = Type.Pick(articlesSchema, ['id', 'title', 'killers', 'victims', 'date', 'images', 'description', 'details', 'location', 'psychologicalBackground', 'policeActions', 'lawsuit', 'socialReactions'])
+export const articlesQueryProperties = Type.Pick(articlesSchema, ['id', 'title', 'killers', 'victims', 'date', 'images', 'description', 'details', 'location', 'psychologicalBackground', 'policeActions', 'lawsuit', 'socialReactions', 'legacyAndImpact'])
 export const articlesQuerySchema = Type.Intersect(
   [
     querySyntax(articlesQueryProperties),
