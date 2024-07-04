@@ -8,14 +8,14 @@ export async function up(knex: Knex): Promise<void> {
     table.specificType('victims', 'text ARRAY');
     table.string('date')
     table.specificType('images', 'text ARRAY');
-    table.string('description')
-    table.string('details')
-    table.string('location')
-    table.string('psychologicalBackground')
-    table.string('policeActions')
-    table.string('lawsuit')
-    table.string('socialReactions')
-    table.string('legacyAndImpact')
+    table.text('description')
+    table.text('details')
+    table.text('location')
+    table.text('psychologicalBackground')
+    table.text('policeActions')
+    table.text('lawsuit')
+    table.text('socialReactions')
+    table.text('legacyAndImpact')
   });
 }
 
